@@ -1,0 +1,16 @@
+"""
+Program: test_assign_average.py
+Author: Mimoze Shyti
+Date: 6/30/2020
+"""
+
+import unittest
+import assign_average as test
+
+class MyTestCase(unittest.TestCase):
+    def test_Cc(self):
+        self.assertEqual("three", test.switch_average('C'))
+        self.assertEqual("three", test.switch_average('c'))
+
+if __name__ == '__main__':
+    unittest.main()
