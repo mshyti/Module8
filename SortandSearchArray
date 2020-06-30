@@ -1,0 +1,13 @@
+"""
+Program: sort_and_search_array.py
+Author: Mimoze Shyti
+Date: 6/30/2020
+"""
+def sort_array(lst):
+    lst.sort()
+
+def search_array(lst,item):
+    for i in lst:
+        if item==i:
+            return i
+    return -1
