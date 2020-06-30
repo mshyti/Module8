@@ -1,0 +1,32 @@
+"""
+Program: DictionaryUpdate.py
+Author: Mimoze Shyti
+Date: 6/29/2020
+"""
+
+def saving_result(dictonary,score):
+    key = 0
+    for value in score :
+        dictonary["score"+str(key)] = int(value)
+        key+=1
+
+def average_scores(dictonary):
+    sum_of_scores = 0
+    s = len(dictonary)
+    for value in dictonary.values():
+        sum_of_scores += value
+        average_score = sum_of_scores/s
+        return average_score
+
+
+if __name__ == "__main__":
+    dictonary = {}
+    test_name = input("Enter your name:")
+    score = int(input("Enter your first score:"))
+    scores = input("Enter your second score:").split()
+    saving_result(dictonary,scores)
+    average_score = average_scores(dictonary)
+
+    print("[{}],Average:{}".format(test_name,average_score))
+
+
