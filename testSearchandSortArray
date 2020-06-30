@@ -1,0 +1,19 @@
+"""
+Program: test_sort_and_search_array.py
+Author: Mimoze Shyti
+Date: 6/30/2020
+"""
+from sort_and_search_array import *
+def find(l,item):
+    ind=search_array(l,item)
+    if(ind!=-1):
+        print("Item",item,"found at index",ind)
+    else:
+        print("Item",item,"not found")
+
+l=[2,5,3,4]
+sort_array(l)
+print("sorted list is",l)
+find(l,'a')
+find(l,'7')
+find(l,3)
