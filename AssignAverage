@@ -1,0 +1,20 @@
+"""
+Program: assign_average.py
+Author: Mimoze Shyti
+Date: 6/30/2020
+"""
+
+def switch_average(key):
+    switcher = {
+        'A': "one",
+        'a': "one",
+        'B': "two",
+        'b': "two",
+        'C': "three",
+        'c': "three",
+        'D': "four",
+        'd': "four",
+        'E': "five",
+        'e': "five"
+    }
+    return switcher.get(key, "wrong key")
