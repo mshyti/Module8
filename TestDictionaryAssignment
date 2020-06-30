@@ -1,0 +1,23 @@
+"""
+Program: test_set_membership.py
+Author: Mimoze Shyti
+Date: 6/30/2020
+"""
+import unittest
+from more_fun_with_collections import dict_membership
+
+class MyTestCase(unittest.TestCase):
+    def test_in_dict_true(self):
+        test_dict = {'Apple', 'Strawberry', 'Orange', 'Blueberry', 'Peach', 'Mango', 'Pineapple'}
+        test_val = 'Mango'
+        expected_output = True
+        self.assertEqual(expected_output, dict_membership.in_dict(test_dict, test_val))
+
+    def test_in_dict_false(self):
+        test_dict = {'Apple', 'Strawberry', 'Orange', 'Blueberry', 'Peach', 'Mango', 'Pineapple'}
+        test_val = 'Banana'
+        expected_output = False
+        self.assertEqual(expected_output, dict_membership.in_dict(test_dict, test_val))
+
+if __name__ == '__main__':
+    unittest.main()
