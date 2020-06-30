@@ -1,0 +1,12 @@
+"""
+Program: test_set_membership.py
+Author: Mimoze Shyti
+Date: 6/30/2020
+"""
+def in_dict(dict, value):
+    return value in dict
+
+if __name__ == '__main__':
+    print(in_dict({'Apple', 'Strawberry', 'Orange', 'Blueberry', 'Peach'}, 'Orange'))
+
+
