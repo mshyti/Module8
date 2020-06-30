@@ -1,0 +1,14 @@
+"""
+Program: half_birthday.py
+Author: Mimoze Shyti
+Date: 6/30/2020
+"""
+from datetime import timedelta,datetime
+from dateutil.relativedelta import relativedelta
+
+def half_birthday(date):
+    half_birthday_date = date + relativedelta(months=+6)
+    return half_birthday_date
+
+birthday = datetime(1995, 2, 19)
+print(half_birthday(birthday))
