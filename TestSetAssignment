@@ -1,0 +1,23 @@
+"""
+Program: test_set_membership.py
+Author: Mimoze Shyti
+Date: 6/29/2020
+"""
+import unittest
+from more_fun_with_collections import set_membership
+
+class MyTestCase(unittest.TestCase):
+    def test_in_set_true(self):
+        test_set = {14, 15, 16, 17, 18}
+        test_num = 15
+        expected_output = True
+        self.assertEqual(expected_output, set_membership.in_set(test_set, test_num))
+
+    def test_in_set_false(self):
+        test_set = {14, 15, 16, 17, 18}
+        test_num = 13
+        expected_output = False
+        self.assertEqual(expected_output, set_membership.in_set(test_set, test_num))
+
+if __name__ == '__main__':
+    unittest.main()
