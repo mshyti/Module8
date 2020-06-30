@@ -1,0 +1,26 @@
+"""
+Program: test_sort_and_search_list.py
+Author: Mimoze Shyti
+Date: 6/30/2020
+"""
+from sort_and_search_list import search_list,sort_list
+def test_sort(lst):
+    new_lst = sorted(lst)
+    sort_list(lst)
+    if lst == new_lst:
+        print("Test Passed")
+    else:
+        print("Test Failed")
+
+def test_search(lst,value):
+    index = search_list(lst,value)
+    if index == -1:
+        print(value," is not present in the list")
+    else:
+        print(value ," is present in the list at index: ",index)
+
+l = [8,3,2,4,1]
+
+test_search(l,9)
+test_search(l,2)
+test_sort(l)
